@@ -21,7 +21,7 @@
     <test.include>%regex[.*.class]</test.include>
     <truth.version>1.4.4</truth.version>
     <jspecify.version>1.0.0</jspecify.version>
-    <errorprone.version>2.36.0</errorprone.version>
+    <errorprone.version>2.37.0</errorprone.version>
     <j2objc.version>3.0.0</j2objc.version>
     <project.build.outputTimestamp>2025-01-02T00:00:00Z</project.build.outputTimestamp>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -38,7 +38,7 @@
       --add-opens java.base/java.util=ALL-UNNAMED
       --add-opens java.base/sun.security.jca=ALL-UNNAMED
     </test.add.opens>
-    <test.add.args></test.add.args>
+    <test.add.args/>
     <module.status>integration</module.status>
     <variant.jvmEnvironment>android</variant.jvmEnvironment>
     <variant.jvmEnvironmentVariantName>android</variant.jvmEnvironmentVariantName>
@@ -467,7 +467,7 @@
         </property>
       </activation>
       <properties>
-        <test.add.opens></test.add.opens>
+        <test.add.opens/>
       </properties>
     </profile>
     <profile>
@@ -480,7 +480,7 @@
         </property>
       </activation>
       <properties>
-        <test.add.opens></test.add.opens>
+        <test.add.opens/>
       </properties>
     </profile>
     <!-- JDiff and the Gradle integration tests need Java 11 to be installed, and they need to know where it's located so that they can set JAVA_HOME to point to it. The following profile downloads a temurin Java 11 (if one isn't already available) and writes its location to target/java_11_home. This lets our JDiff and Gradle-integration-test scripts invoke the `print-java-11-home` profile and then read that file. -->
